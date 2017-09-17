@@ -8,6 +8,6 @@ for /f "delims=" %%i in ('git log -1 --pretty^=%%B') do set commit_msg=%%i
 for /f "delims=" %%i in ('git log -1 --pretty^=%%an') do set commit_author=%%i
 for /f %%i in ('git log -1 --pretty^=%%ae') do set commit_email=%%i
 
-C:\projects\crossfire\packages\coveralls.net.0.7.0\tools\csmacnz.Coveralls.exe --opencover -i C:\projects\crossfire\coverage.xml --repoToken %COVERALLS_TOKEN% --commitId %commit_id% --commitBranch %commit_branch% --commitAuthor %commit_author% --commitEmail %commit_email% --commitMessage %commit_msg%
+C:\projects\crossfire\packages\coveralls.net.0.7.0\tools\csmacnz.Coveralls.exe --opencover -i C:\projects\crossfire\coverage.xml --repoToken %COVERALLS_REPO_TOKEN% --commitId %commit_id% --commitBranch %commit_branch% --commitAuthor "%commit_author%" --commitEmail %commit_email% --commitMessage "%commit_msg%"
 
 MSBuild.SonarQube.Runner.exe end /d:"sonar.login=%SONAR_LOGIN%"

@@ -28,7 +28,7 @@ namespace MultithreadProducerConsumer
 
         public void StartConsumer()
         {
-            if (_consumerTask != null) throw new Exception("Consumer was already started");
+            if (_consumerTask != null) throw new ApplicationException("Consumer was already started");
 
             _consumerTaskCancellationTokenSource = new CancellationTokenSource();
 
@@ -77,7 +77,7 @@ namespace MultithreadProducerConsumer
                     throw new NotImplementedException();
                 }
             }
-            catch (OperationCanceledException) { }
+            catch (OperationCanceledException) { /* Task was canceled */ }
 
             Console.WriteLine("Consumer task finished");
         }
