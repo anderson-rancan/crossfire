@@ -6,6 +6,9 @@ This repository contains the code for every post/article from the <a href="https
 [![MIT licensed](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/anderson-rancan/crossfire/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/anderson-rancan/crossfire/badge.svg?branch=master)](https://coveralls.io/github/anderson-rancan/crossfire?branch=master)
 <a href="https://scan.coverity.com/projects/anderson-rancan-crossfire"><img alt="Coverity Scan Build Status" src="https://scan.coverity.com/projects/13794/badge.svg"/></a>
+<a href="https://sonarqube.com/dashboard/index?id=CrossFire"><img src="https://sonarqube.com/api/badges/gate?key=CrossFire" alt="SonarQube quality gate"></a>
+<a href="https://sonarqube.com/dashboard/index?id=CrossFire"><img src="https://sonarqube.com/api/badges/measure?key=CrossFire&metric=code_smells" alt="SonarQube code smells"></a>
+
 
 ## ProducerConsumer project
 
