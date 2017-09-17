@@ -4,7 +4,7 @@ This repository contains the code for every post/article from the <a href="https
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1sm6e4iv9ixhmxhy?svg=true)](https://ci.appveyor.com/project/anderson-rancan/crossfire)
 [![MIT licensed](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/anderson-rancan/crossfire/blob/master/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/anderson-rancan/crossfire/badge.svg?branch=master)](https://coveralls.io/github/anderson-rancan/crossfire?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/anderson-rancan/crossfire/badge.svg?branch=HEAD)](https://coveralls.io/github/anderson-rancan/crossfire?branch=HEAD)
 <a href="https://sonarqube.com/dashboard/index?id=CrossFire"><img src="https://sonarqube.com/api/badges/gate?key=CrossFire" alt="SonarQube quality gate"></a>
 <a href="https://sonarqube.com/dashboard/index?id=CrossFire"><img src="https://sonarqube.com/api/badges/measure?key=CrossFire&metric=code_smells" alt="SonarQube code smells"></a>
 
