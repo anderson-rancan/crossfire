@@ -3,6 +3,7 @@
 This repository contains the code for every post/article from the <a href="https://arancan.wordpress.com/">CrossFire blog</a>.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1sm6e4iv9ixhmxhy?svg=true)](https://ci.appveyor.com/project/anderson-rancan/crossfire)
+[![MIT licensed](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/anderson-rancan/crossfire/blob/master/LICENSE)
 
 ## ProducerConsumer project
 
