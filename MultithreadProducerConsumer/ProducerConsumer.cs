@@ -17,7 +17,7 @@ namespace MultithreadProducerConsumer
         Task StartProducers(int numberOfProducers, object data);
     }
 
-    public class ProducerConsumer : IProducerConsumer
+    public sealed class ProducerConsumer : IProducerConsumer
     {
         private BlockingCollection<string> _collectionToConsume = new BlockingCollection<string>();
 
@@ -28,7 +28,7 @@ namespace MultithreadProducerConsumer
 
         public void StartConsumer()
         {
-            if (_consumerTask != null) throw new ApplicationException("Consumer was already started");
+            if (_consumerTask != null) throw new Exception("Consumer was already started");
 
             _consumerTaskCancellationTokenSource = new CancellationTokenSource();
 
