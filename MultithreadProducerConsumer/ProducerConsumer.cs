@@ -86,7 +86,10 @@ namespace MultithreadProducerConsumer
                     consumerData.Action(item);
                 }
             }
-            catch (OperationCanceledException) { /* Task was canceled */ }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("Consumer task was canceled");
+            }
 
             Console.WriteLine("Consumer task finished");
         }
@@ -121,16 +124,23 @@ namespace MultithreadProducerConsumer
 
             _producerTask = Task.Factory.StartNew(() =>
             {
-                Parallel.For(1, ProducersQuantity + 1, (counter) =>
+                try
                 {
-                    Producer(Produce(counter));
-                    Console.WriteLine("Producer {0} finished", counter);
-                });
+                    Parallel.For(1, ProducersQuantity + 1, (counter) =>
+                    {
+                        Producer(Produce(counter));
+                        Console.WriteLine("Producer {0} finished", counter);
+                    });
 
-                _collectionToConsume.CompleteAdding();
+                    _collectionToConsume.CompleteAdding();
 
-                Console.WriteLine();
-                Console.WriteLine("Every producer finished adding new data");
+                    Console.WriteLine();
+                    Console.WriteLine("Every producer finished adding new data");
+                }
+                catch (OperationCanceledException)
+                {
+                    Console.WriteLine("Producer task was canceled");
+                }
             },
             _producerTaskCancellationTokenSource.Token);
         }
