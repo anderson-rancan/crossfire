@@ -196,12 +196,18 @@ namespace MultithreadProducerConsumer
                 _producerTaskCancellationTokenSource.Cancel();
             }
 
-            _producerTask.Wait(500);
-            _producerTask.Dispose();
-            _producerTask = null;
+            if (_producerTask != null)
+            {
+                _producerTask.Wait(500);
+                _producerTask.Dispose();
+                _producerTask = null;
+            }
 
-            _producerTaskCancellationTokenSource.Dispose();
-            _producerTaskCancellationTokenSource = null;
+            if (_producerTaskCancellationTokenSource != null)
+            {
+                _producerTaskCancellationTokenSource.Dispose();
+                _producerTaskCancellationTokenSource = null;
+            }
         }
 
         public void StopAndDisposeConsumer()
@@ -211,12 +217,18 @@ namespace MultithreadProducerConsumer
                 _consumerTaskCancellationTokenSource.Cancel();
             }
 
-            _consumerTask.Wait(500);
-            _consumerTask.Dispose();
-            _consumerTask = null;
+            if (_consumerTask != null)
+            {
+                _consumerTask.Wait(500);
+                _consumerTask.Dispose();
+                _consumerTask = null;
+            }
 
-            _consumerTaskCancellationTokenSource.Dispose();
-            _consumerTaskCancellationTokenSource = null;
+            if (_consumerTaskCancellationTokenSource != null)
+            {
+                _consumerTaskCancellationTokenSource.Dispose();
+                _consumerTaskCancellationTokenSource = null;
+            }
         }
 
         public void Dispose()

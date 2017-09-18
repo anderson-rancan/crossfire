@@ -24,17 +24,6 @@ namespace MultithreadProducerConsumerUnitTest
         }
 
         [Test]
-        public void StartingAndStopping_ShouldNotThrowExceptions()
-        {
-            Assert.DoesNotThrow(() =>
-            {
-                _testObject.Writer = new Mock<TextWriter>().Object;
-                _testObject.StartConsumer();
-                _testObject.StartProducers();
-            });
-        }
-
-        [Test]
         [TestCase(5, 1)]
         [TestCase(3, 5)]
         [TestCase(1, 25)]
