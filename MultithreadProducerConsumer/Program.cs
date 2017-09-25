@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
 namespace MultithreadProducerConsumer
 {
+    [ExcludeFromCodeCoverage]
     public static class Program
     {
         public static void Main(string[] args)
