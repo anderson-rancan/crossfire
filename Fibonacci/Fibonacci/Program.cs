@@ -14,9 +14,9 @@ namespace Fibonacci
             var fibonacciCalculator = FibonacciCalculatorFactory.Create();
 
             int position;
-            if (!args.Any() || !int.TryParse(args.First(), out position))
+            if (!args.Any() || !int.TryParse(args.First(), out position) || position < 0)
             {
-                position = 3;
+                position = 40;
             }
 
             WriteLine($"For this test, we will calculate the {position}th position!");
