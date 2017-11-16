@@ -1,4 +1,4 @@
-C:\projects\crossfire\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user "-target:C:\projects\crossfire\packages\NUnit.ConsoleRunner.3.7.0\tools\nunit3-console.exe" "-targetargs: C:\projects\crossfire\Tests\MultithreadProducerConsumerUnitTest\bin\Debug\MultithreadProducerConsumerUnitTest.dll" -output:C:\projects\crossfire\coverage.xml -returntargetcode
+C:\projects\crossfire\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user "-target:C:\projects\crossfire\packages\NUnit.ConsoleRunner.3.7.0\tools\nunit3-console.exe" "-targetargs: C:\projects\crossfire\Fibonacci\FibonacciUnitTest\bin\Debug\FibonacciUnitTest.dll C:\projects\crossfire\LoopPerformance\LoopPerformanceUnitTest\bin\Debug\LoopPerformanceUnitTest.dll C:\projects\crossfire\MultithreadProducerConsumer\MultithreadProducerConsumerUnitTest\bin\Debug\MultithreadProducerConsumerUnitTest.dll" -output:C:\projects\crossfire\coverage.xml -returntargetcode
 
 C:\projects\crossfire\packages\ReportGenerator.3.0.0\tools\ReportGenerator.exe "-reports:C:\projects\crossfire\coverage.xml" "-targetdir:C:\projects\crossfire\.coverage"
 
