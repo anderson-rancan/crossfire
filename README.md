@@ -5,8 +5,8 @@ This repository contains the code for every post/article from the <a href="https
 [![Build status](https://ci.appveyor.com/api/projects/status/1sm6e4iv9ixhmxhy?svg=true)](https://ci.appveyor.com/project/anderson-rancan/crossfire)
 [![MIT licensed](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/anderson-rancan/crossfire/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/anderson-rancan/crossfire/badge.svg?branch=HEAD)](https://coveralls.io/github/anderson-rancan/crossfire?branch=HEAD)
-[![Quality Gate](https://sonarqube.com/api/badges/gate?key=CrossFire)](https://sonarqube.com/dashboard/index/CrossFire)
-<a href="https://sonarqube.com/dashboard/index?id=CrossFire"><img src="https://sonarqube.com/api/badges/measure?key=CrossFire&metric=open_issues" alt="SonarQube Open issues"></a>
+[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=CrossFire)](https://sonarcloud.io/dashboard/index/CrossFire)
+<a href="https://sonarcloud.io/project/issues?id=CrossFire&resolved=false"><img src="https://sonarcloud.io/api/badges/measure?key=CrossFire&metric=open_issues" alt="SonarQube Open issues"></a>
 
 ## ProducerConsumer project
 
